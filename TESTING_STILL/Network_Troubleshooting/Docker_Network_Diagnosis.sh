@@ -22,7 +22,7 @@ do
 	#Print the container that is currently being executed into.  
 	termtitle=`docker exec -t "${line}" /bin/sh -c 'cat /etc/hostname'`
 	#Checking to see some manual stuff via busybox
-	gnome-terminal  --tab -e --title="${termtitle}" "bash -c 'docker attach "${line}"; bash'"
+	gnome-terminal  --tab -e "bash -c 'docker attach "${line}"; bash'"
 	#gnome-terminal --tab docker attach "${line}"
 	#Still attempting to get this working
 	#docker run -it --rm --network container:"${line}" -a stdout nicolaka/netshoot #from 'https://github.com/nicolaka/netshoot'

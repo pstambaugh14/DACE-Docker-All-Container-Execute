@@ -1,0 +1,19 @@
+Connect a container to a network (--network)
+
+When you start a container use the --network flag to connect it to a network. This adds the busybox container to the my-net network.
+
+$ docker run -itd --network=my-net busybox
+
+You can also choose the IP addresses for the container with --ip and --ip6 flags when you start the container on a user-defined network.
+
+$ docker run -itd --network=my-net --ip=10.10.9.75 busybox
+
+If you want to add a running container to a network use the docker network connect subcommand.
+
+You can connect multiple containers to the same network. Once connected, the containers can communicate easily need only another container’s IP address or name. For overlay networks or custom plugins that support multi-host connectivity, containers connected to the same multi-host network but launched from different Engines can also communicate in this way.
+
+    Note
+
+    Service discovery is unavailable on the default bridge network. Containers can communicate via their IP addresses by default. To communicate by name, they must be linked.
+
+You can disconnect a container from a network using the docker network disconnect command.

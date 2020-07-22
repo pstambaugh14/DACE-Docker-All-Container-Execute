@@ -26,6 +26,7 @@ This is useful for many different purposes:
 - Test a whole plethora of commands to get the syntax correct (pipes, chain of different commands, etc.)
 - See which commands work and which will not. 
 - Create another script to simply gather data/metrics of container(s) in environment. 
+- Make a network diagnostic tool to be able to analyze networking issues from each container's node.  This can help expedite the process of network troubleshooting and help with an early diagnosis for overall troubleshooting issues.  
 
 -----------------------------------------------------------------------------------------------------------------------------
 

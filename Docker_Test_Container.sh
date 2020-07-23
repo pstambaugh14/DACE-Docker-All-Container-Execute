@@ -3,7 +3,7 @@
 #docker run --entrypoint "/bin/sh" -it alpine/git
 
 #BEST
-docker run -itd --network=alpinegit --entrypoint "/bin/sh" -it --rm alpine/git
+docker run -itd --network=alpinegit --entrypoint "/bin/sh" -itd --rm alpine/git
 
 ###TESTING2###
 #docker run -itd --network=alpinegit --entrypoint "/usr/bin/top" -it --rm alpine/git
